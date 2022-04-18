@@ -1,0 +1,352 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<!--xhtml is still prefered/recommended type for email-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--viewport, for displayig at 100% on all devices-->
+<title>SailChimp HTML Email Template</title>
+<!--not important when in email but good for when displaying on browser-->
+<style type="text/css">
+/*resets style to have full control of: body, table, td, img*/
+	/*bellow an imported custom font */
+	@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+	/*prevent unecessary spacing top, below, sides*/
+	body {
+		margin: 0;
+	}
+	/*prevent added email spacing bt tables*/
+	table {
+		border-spacing: 0;
+	}
+	td {
+		padding: 0;
+	}
+	img {
+		border: 0;
+	}
+	/*end of resets*/
+
+	.wrapper {
+		width: 100%;
+		/*takes up whole width of page*/
+		table-layout: fixed;
+		/*keeps content from spaning out of center*/
+		background-color: #e5dec7;
+		/*adds a color off white w yellow tint*/
+		padding-bottom: 60px;
+		/*adds padding to the bottom of page creates space 
+		from bottom of page 
+		*/
+	}
+	.main {
+		width: 100%;
+		/*spans 100%*/
+		max-width: 600px;
+		/*maximum width will be up to 600px*/
+		background-color: #fff;
+		/*backround color will be 
+		whiteish 600px span centered*/
+		font-family: sans-serif;
+		/*font used throughout unless other specified */
+		color: #4a4a4a;
+		/*font color throughout*/
+		box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+		/*gives template a subtle shadow around edgesof tempalte*/
+		text-align: center; /*will center align all text on template*/
+	}
+	.social {
+		width: 38px; /*width span of social column*/
+	}
+	.social-media {
+		padding: 12px 0 12px 62px; /*padding helps center it and add spacing around it*/
+	}
+	.two-columns {
+		font-size:0; /*removes any added space around links*/
+		text-align: center; /*center aligns the table contents when sized down */
+	}
+	.two-columns .column {
+		width: 100%; /*width spanned 100% of possible width*/
+		max-width: 300px; /*takes up half of the 600px template*/
+		display: inline-block; /*magic line for columns to be side by side and stack on each other when sized down*/
+		vertical-align: top; /*helps it move correctly*/
+	}
+	h3 {
+		font-family: 'Roboto Condensed',sans-serif; /*font and fallback font*/
+		font-size: 25px; /*sized up font*/
+	}
+	.button {
+		background-color: #4a4a4a;
+		color: #fff;
+		text-decoration: none;
+		padding: 12px 20px ; /*padding t/b, r/l give space bt edges n word*/
+		font-weight:bold; /*chunkier text*/
+		border-radius: 5px; /*rounded button edges*/
+	}
+	h4 {
+		font-family: 'Roboto Condensed',sans-serif; /*font and fallback font*/
+		font-size: 22px; /*sized up font*/
+	}
+	.three-columns {
+		font-size: 0; /*removes any added space around links*/
+		padding: 35px 0 20px;
+	}
+	.three-columns .column {
+		width: 100%;/*spans across 100% of available width*/
+		max-width: 200px; /*max span 200px*/
+		display: inline-block; /*magic line for columns to be side by side and stack on each other when sized down*/
+		vertical-align: top; /*helps it move correctly*/
+	}
+	.three-columns .padding { 
+		padding: 25px; /*spacing around*/
+	}
+	.three-columns .content {
+		font-size: 15px; /*font size*/
+		line-height: 20px; /*line spacing*/
+	}
+	.two-columns.last {
+		text-align: left; /*left aligns the table contents when sized down */
+		padding: 35px 0 ;
+	}
+	.two-columns .padding {
+		padding: 20px;
+	}
+	.two-columns .content {
+		text-align: left;
+		font-size: 15px;
+		line-height: 20px;
+	}
+
+
+</style>
+</head>
+<body>
+<!--center is still used in html emailing/ this will center in xhtml-->
+	<center class="wrapper">
+
+		<table class="main" width="100%">
+
+<!-- BORDER (Black,breaks every section) -->
+			<tr>
+				<td height="8" style="background-color: #000;"></td>
+			</tr>
+<!-- LOGO & SOCIAL MEDIA SECTION -->
+			<tr>
+				<!--padding this adds it on top and bottom appliaed to the whole headeer-->
+				<td style="padding: 14px 0 4px;">
+					<table width="100%">
+						<!--inside this table we will add the columns one for the logo the other for socials-->
+						<tr>
+							<td class="two-columns">
+								<!--set up for stackable tables which will make up the "columns"-->
+								<table class="column">
+									<tr>
+										<!--table data where the actually content lives-->
+										<td style="padding: 0 22px 10px;"> <!--set for once flex down to single column-->
+											<a href="#"> <!--will make the hyperlinked image 250px-->
+												<img src="img/logo.png"  width="300px" alt="" title="Sailchimp width" width="250"></a>
+										</td>
+									</tr>
+								</table>
+								<table class="column">
+									<tr>
+										<td class="social-media"><!--social media links in header -->
+											<a href="#"><img src="img/facebook.png" alt="" class="social"></a>
+											<a href="#"><img src="img/twitter.png" alt="" class="social"></a>
+											<a href="#"><img src="img/youtube.png" alt="" class="social"></a>
+											<a href="#"><img src="img/linkedin.png" alt="" class="social"></a>
+											<a href="#"><img src="img/instagram.png" alt="" class="social"></a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BANNER IMAGE -->
+			<tr> <!--this one you wont want any added spacing or even need it-->
+				<td>
+					<!--max width necessary to full display image and flex down-->
+					<a href="#"><img src="img/banner.jpg" alt="" width="600" style="max-width:100%;"></a>
+				</td>
+			</tr>
+<!-- TITLE, TEXT & BUTTON -->
+			<tr>
+				<td style="padding: 20px 15px 50px;"> <!--padding around the whole section-->
+					<table width="100%"><!--let it span 100% of the width available-->
+						<tr>
+							<td>
+								<h3>HTML Email Template <span style="color: #c89800;">Course</span></h3>
+								<!--line height gives it some space bt lines-->
+								<p style="line-height: 23px; font-size: 15px; padding: 0px 0 px;">Responsive HTML Email templates that you can build around. Responsive desig
+									templates that you can build around . Responsive html email temp.
+									Responsive fool templates that you can build around.
+									Responsive desig templates that you can.</p>
+								<a href="#" class="button">View Course</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+<!-- BORDER -->
+			<tr>
+				<td height="2" style="background-color: #000;"></td>
+			</tr>
+			
+<!-- THREE COLUMN SECTION -->
+			<tr>
+				<td>
+					<table width="100%"> <!--span 100% of available width-->
+						<tr>
+							<td class="three-columns"> <!-- will break u into columns-->
+								<!--Emil design column-->
+								<table class="column"> <!--each column-->
+									<tr>
+										<td class="padding">
+											<table class="content"> <!--and what it contains one row with img other with h and p-->
+												<tr>
+													<td>
+														<a href="#"><img src="img/design.png" alt="" width="150"></a>
+
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Email Design</h4>
+														<p>Responsive HTML Email Template Course to master email development.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--Email Maarketing-->
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href="#"><img src="img/marketing.png" alt="" width="150"></a>
+								
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Email Marketing</h4>
+														<p>Responsive HTML Email Template Course to master email development.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--Development-->
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<a href="#"><img src="img/development.png" alt="" width="150"></a>
+								
+													</td>
+												</tr>
+												<tr>
+													<td style="padding: 5px 0 10px;">
+														<h4>Development</h4>
+														<p>Responsive HTML Email Template Course to master email development.</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+					</table>
+				</td>
+			</tr>
+			
+<!-- BORDER -->
+			<tr>
+				<td height="2" style="background-color: #000;"></td>
+			</tr>
+
+			
+<!-- TWO COLUMN SECTION -->
+			<tr>
+				<td>
+					<table width="100%">
+						<tr>
+							<td class="two-columns last">
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+													<a href="#"><img src="img/palette.png" alt="" width="260"></a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!--custom design paragraph-->
+								<table class="column">
+									<tr>
+										<td class="padding">
+											<table class="content">
+												<tr>
+													<td>
+														<h4>Create Custom Designs</h4>
+														<p>Over the year we have built up a massive 
+															portfolio our client website and email design.</p>
+														<p style="padding-bottom: 15px;">We would love to share them with you, get to know our work!</p>
+														<a href="#" class="button">HTML Email Course</a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+<!-- FOOTER SECTION -->
+			<tr>
+				<td style="background-color: #2b2e33; color:#fff;">
+					<table width="100%">
+						<tr>
+							<td style="padding: 45px 20px">
+								
+									<a href="#"><img src="img/logo.png" alt="" width="260"></a>
+									<p style="padding: 5px 0 3px;">SailChimp HTML Email Template</p>
+									<p style="padding: 3px;">123 Street Road, City, State 55555</p>
+										<!--social media links in header -->
+										<a href="#"><img src="img/facebook.png" alt="" class="social"></a>
+										<a href="#"><img src="img/twitter.png" alt="" class="social"></a>
+										<a href="#"><img src="img/youtube.png" alt="" class="social"></a>
+										<a href="#"><img src="img/linkedin.png" alt="" class="social"></a>
+										<a href="#"><img src="img/instagram.png" alt="" class="social"></a>
+									<p>SUBSCRIBE</p>
+								
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+		</table> <!-- End Main Class -->
+
+	</center> <!-- End Wrapper -->
+
+</body>
+</html>

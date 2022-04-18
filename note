@@ -1,0 +1,5 @@
+chimp email mostly composed of multi column tables
+for desktop version.
+responsive size for mobile devices scaling down to single column
+
+notes: divs arent allowed in html emails
